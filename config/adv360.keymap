@@ -101,6 +101,41 @@
             bindings = <&kp LG(N) &kp TILDE>;
             label = "NTILDEL";
         };
+
+        md_ibold: md_ibold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT>;
+            label = "MD_IBOLD";
+        };
+
+        md_bold: md_bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp STAR &kp STAR &kp LEFT_ARROW &kp LEFT>;
+            label = "MD_BOLD";
+        };
+
+        md_italic: md_italic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp LEFT>;
+            label = "MD_ITALIC";
+        };
+
+        md_score: md_score {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp U &kp GT &kp LT &kp FSLH &kp U &kp GT &kp LEFT_ARROW &kp LEFT &kp LEFT_ARROW &kp LEFT>;
+            label = "MD_SCORE";
+        };
+
+        md_strike: md_strike {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp TILDE &kp TILDE &kp TILDE &kp LEFT_ARROW &kp LEFT>;
+            label = "MD_STRIKE";
+        };
     };
 
     keymap {
@@ -148,11 +183,11 @@
 
         utf8 {
             bindings = <
-&trans  &trans         &trans         &trans  &trans  &trans  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &trans
-&trans  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &trans
-&trans  &aumlautl      &ss            &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &trans
-&trans  &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &trans
-&trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &trans
+&md_ibold   &trans         &trans         &trans  &trans  &trans  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &trans
+&md_italic  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &trans
+&md_bold    &aumlautl      &ss            &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &trans
+&md_score   &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &trans
+&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &trans
             >;
         };
 

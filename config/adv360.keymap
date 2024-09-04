@@ -52,6 +52,55 @@
             bindings = <&kp DOWN_ARROW &kp RIGHT>;
             label = "C_DR";
         };
+
+        hoplophobe: hoplophobe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp O &kp P &kp L &kp O &kp P &kp H &kp O &kp B &kp E &kp N1 &kp EXCL &kp RET>;
+            label = "HOPLOPHOBE";
+        };
+
+        aumlautu: aumlautu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(A)) &kp COLON>;
+            label = "AUMLAUTU";
+        };
+
+        aumlautl: aumlautl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(A) &kp COLON>;
+            label = "AUMLAUTL";
+        };
+
+        ss: ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(S) &kp S>;
+            label = "SS";
+        };
+
+        oumlautl: oumlautl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(O) &kp COLON>;
+            label = "OUMLAUTL";
+        };
+
+        uumlautl: uumlautl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(U) &kp COLON>;
+            label = "UUMLAUTL";
+        };
+
+        ntildel: ntildel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N) &kp TILDE>;
+            label = "NTILDEL";
+        };
     };
 
     keymap {
@@ -99,11 +148,11 @@
 
         utf8 {
             bindings = <
-&trans  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &to 5   &trans
+&trans  &trans         &trans         &trans  &trans  &trans  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &trans
+&trans  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &trans
+&trans  &aumlautl      &ss            &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &trans
+&trans  &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &trans
+&trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &trans
             >;
         };
 

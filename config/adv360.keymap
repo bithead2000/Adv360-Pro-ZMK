@@ -136,6 +136,41 @@
             bindings = <&kp TILDE &kp TILDE &kp TILDE &kp TILDE &kp LEFT_ARROW &kp LEFT>;
             label = "MD_STRIKE";
         };
+
+        md_h4: md_h4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp ENTER &kp POUND &kp POUND &kp POUND &kp POUND &kp SPACE>;
+            label = "MD_H4";
+        };
+
+        md_h3: md_h3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp POUND &kp POUND &kp POUND &kp SPACE>;
+            label = "MD_H3";
+        };
+
+        md_h2: md_h2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp POUND &kp POUND &kp SPACE>;
+            label = "MD_H2";
+        };
+
+        md_toc: md_toc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp RET &kp LBKT &kp SPACE &kp LS(T) &kp LS(O) &kp LS(C) &kp SPACE &kp LBRC &kp SPACE>;
+            label = "MD_TOC";
+        };
+
+        md_h1: md_h1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp ESCAPE &kp LS(G) &kp LS(G) &kp LS(O) &kp RET &kp RET &kp RET &kp LS(E) &kp N &kp T &kp R &kp Y &kp COLON &kp SPACE &kp STAR &kp STAR &kp LA(D) &kp SPACE &kp LA(T) &kp STAR &kp STAR &kp CARET &kp CARET &kp POUND &kp SPACE>;
+            label = "MD_H1";
+        };
     };
 
     keymap {
@@ -183,11 +218,11 @@
 
         utf8 {
             bindings = <
-&md_ibold   &trans         &trans         &trans  &trans  &trans  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &trans
-&md_italic  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &trans
-&md_bold    &aumlautl      &ss            &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &trans
-&md_score   &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &trans
-&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &trans
+&md_ibold   &trans         &trans         &trans  &trans  &trans  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &md_h4
+&md_italic  &trans         &trans         &trans  &trans  &trans  &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &md_h2
+&md_bold    &aumlautl      &ss            &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &md_h1
+&md_score   &trans         &trans         &trans  &trans  &trans                  &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &md_h3
+&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &md_toc
             >;
         };
 

@@ -372,11 +372,11 @@
 
         utf8 {
             bindings = <
-&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans     &trans    &trans        &trans     &md_h4
-&md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &trans       &uumlautl  &md_info  &oumlautl     &md_tip    &md_h2
-&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &trans     &sign     &md_danger    &trans     &md_h1
-&md_score   &trans         &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img    &trans    &md_question  &pregunta  &md_h3
-&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &md_success  &trans  &trans      &trans  &trans  &md_note               &trans     &trans    &trans        &to 5      &md_toc
+&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans     &trans     &trans        &trans      &md_h4
+&md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &trans       &uumlautl  &md_info   &oumlautl     &md_tip     &md_h2
+&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &trans     &sign      &md_danger    &trans      &md_h1
+&md_score   &kp LSHIFT     &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img    &pregunta  &md_question  &kp RSHIFT  &md_h3
+&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &md_success  &trans  &trans      &trans  &trans  &md_note               &trans     &trans     &trans        &to 5       &md_toc
             >;
         };
 

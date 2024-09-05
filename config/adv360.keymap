@@ -227,6 +227,111 @@
             bindings = <&kp LG(LS(E)) &kp GT>;
             label = "EMACRONU";
         };
+
+        sign: sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp R &kp K &kp SPACE &kp LS(R) &kp O &kp Y &kp B &kp A &kp L>;
+            label = "SIGN";
+        };
+
+        pregunta: pregunta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(QMARK) &kp QMARK>;
+            label = "PREGUNTA";
+        };
+
+        md_warning: md_warning {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(W) &kp LS(A) &kp LS(R) &kp LS(N) &kp LS(I) &kp LS(N) &kp LS(G) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_WARNING";
+        };
+
+        md_example: md_example {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(E) &kp LS(X) &kp LS(A) &kp LS(M) &kp LS(P) &kp LS(L) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_EXAMPLE";
+        };
+
+        md_question: md_question {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(Q) &kp LS(U) &kp LS(E) &kp LS(S) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_QUESTION";
+        };
+
+        md_success: md_success {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(S) &kp LS(U) &kp LS(C) &kp LS(C) &kp LS(E) &kp LS(S) &kp LS(S) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_SUCCESS";
+        };
+
+        md_fail: md_fail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(F) &kp LS(A) &kp LS(I) &kp LS(L) &kp LS(U) &kp LS(R) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_FAIL";
+        };
+
+        md_danger: md_danger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(D) &kp LS(A) &kp LS(N) &kp LS(G) &kp LS(E) &kp LS(R) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_DANGER";
+        };
+
+        md_quote: md_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(Q) &kp LS(U) &kp LS(O) &kp LS(T) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_QUOTE";
+        };
+
+        md_todo: md_todo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_TODO";
+        };
+
+        md_note: md_note {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(N) &kp LS(O) &kp LS(T) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_NOTE";
+        };
+
+        md_info: md_info {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(I) &kp LS(N) &kp LS(F) &kp LS(O) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_INFO";
+        };
+
+        md_bug: md_bug {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(B) &kp LS(U) &kp LS(G) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_BUG";
+        };
+
+        md_tip: md_tip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(T) &kp LS(I) &kp LS(P) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MD_TIP";
+        };
+
+        md_img: md_img {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp LBKT &kp PIPE &kp N3 &kp N5 &kp N0 &kp RIGHT_BRACKET &kp LPAR &kp RPAR &kp HOME &kp RIGHT_ARROW &kp RIGHT>;
+            label = "MD_IMG";
+        };
     };
 
     keymap {
@@ -274,11 +379,11 @@
 
         utf8 {
             bindings = <
-&md_ibold   &trans         &trans         &quotes    &md_bold    &emacronu  &to 5                                       &to 0   &trans       &trans     &trans  &trans     &trans  &md_h4
-&md_italic  &trans         &trans         &parens    &ticks      &trans     &trans                                      &trans  &trans       &uumlautl  &trans  &oumlautl  &trans  &md_h2
-&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans  &trans  &trans      &trans  &trans  &trans  &hoplophobe  &trans     &trans  &trans     &trans  &md_h1
-&md_score   &trans         &trans         &brackets  &md_strike  &trans                     &trans      &trans                  &trans       &trans     &trans  &trans     &trans  &md_h3
-&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &trans  &trans  &trans      &trans  &trans  &trans               &trans     &trans  &trans     &to 5   &md_toc
+&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans     &trans    &trans        &trans     &md_h4
+&md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &trans       &uumlautl  &md_info  &oumlautl     &md_tip    &md_h2
+&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &trans     &sign     &md_danger    &trans     &md_h1
+&md_score   &trans         &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img    &trans    &md_question  &pregunta  &md_h3
+&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &md_success  &trans  &trans      &trans  &trans  &md_note               &trans     &trans    &trans        &to 5      &md_toc
             >;
         };
 

@@ -376,6 +376,27 @@
             bindings = <&kp EXCL &kp LBKT &kp PIPE &kp N3 &kp N5 &kp N0 &kp RIGHT_BRACKET &kp LPAR &kp RPAR &kp HOME &kp RIGHT_ARROW &kp RIGHT>;
             label = "MD_IMG";
         };
+
+        m_dl: m_dl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_LEFT>;
+            label = "M_DL";
+        };
+
+        m_ul: m_ul {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP &mmv MOVE_LEFT>;
+            label = "M_UL";
+        };
+
+        m_dr: m_dr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_RIGHT>;
+            label = "M_DR";
+        };
     };
 
     keymap {
@@ -403,11 +424,11 @@
 
         fn {
             bindings = <
-&kp F1   &kp F2   &kp F3    &kp F4        &kp F5     &kp F6     &tog 5                                                &to 0           &kp F7              &kp F8               &kp F9          &kp F10             &kp F11             &kp F12
-&kp F16  &kp F20  &c_ul     &kp UP_ARROW  &c_ur      &c_ur      &kp K_PLAY_PAUSE                                      &kp K_PREVIOUS  &mmv MOVE -100 100  &mmv MOVE -100 100   &mmv MOVE_UP    &mmv MOVE 100 100   &mmv MOVE 100 100   &kp F24
-&kp F15  &kp F19  &kp LEFT  &none         &kp RIGHT  &kp RIGHT  &kp K_MUTE        &trans  &trans      &trans  &trans  &kp K_NEXT      &mkp MB4            &mmv MOVE_LEFT       &trans          &mmv MOVE_RIGHT     &mmv MOVE_RIGHT     &kp F23
-&kp F14  &kp F18  &c_dl     &kp DOWN      &c_dr      &none                                &trans      &trans                          &mkp MB5            &mmv MOVE -100 -100  &mmv MOVE_DOWN  &mmv MOVE 100 -100  &mmv MOVE 100 -100  &kp F22
-&kp F13  &kp F17  &c_dl     &kp DOWN      &c_dr                 &trans            &trans  &trans      &trans  &trans  &trans                              &mkp LCLK            &mkp MCLK       &mkp RCLK           &to 3               &kp F21
+&kp F1   &kp F2   &kp F3    &kp F4        &kp F5     &kp F6     &tog 5                                                &to 0           &kp F7    &kp F8          &kp F9          &kp F10            &kp F11            &kp F12
+&kp F16  &kp F20  &c_ul     &kp UP_ARROW  &c_ur      &c_ur      &kp K_PLAY_PAUSE                                      &kp K_PREVIOUS  &m_ul     &m_ul           &mmv MOVE_UP    &mmv MOVE 100 100  &mmv MOVE 100 100  &kp F24
+&kp F15  &kp F19  &kp LEFT  &none         &kp RIGHT  &kp RIGHT  &kp K_MUTE        &trans  &trans      &trans  &trans  &kp K_NEXT      &mkp MB4  &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT    &mmv MOVE_RIGHT    &kp F23
+&kp F14  &kp F18  &c_dl     &kp DOWN      &c_dr      &none                                &trans      &trans                          &mkp MB5  &m_dl           &mmv MOVE_DOWN  &m_dr              &m_dr              &kp F22
+&kp F13  &kp F17  &c_dl     &kp DOWN      &c_dr                 &trans            &trans  &trans      &trans  &trans  &trans                    &mkp LCLK       &mkp MCLK       &mkp RCLK          &to 3              &kp F21
             >;
         };
 

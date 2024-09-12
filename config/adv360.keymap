@@ -393,7 +393,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL       &mt F1 N1       &mt F2 N2    &mt F3 N3       &mt F4 N4    &mt F5 N5  &to 5                                                              &mo 5      &mt F6 N6       &mt F7 N7       &mt F8 N8          &mt F9 N9       &kp N0              &kp MINUS
+&kp EQUAL       &mt F1 N1       &mt F2 N2    &mt F3 N3       &mt F4 N4    &mt F5 N5  &to 5                                                              &to 3      &mt F6 N6       &mt F7 N7       &mt F8 N8          &mt F9 N9       &kp N0              &kp MINUS
 &kp ESCAPE      &kp Q           &kp W        &macrotape 0 E  &kp R        &kp T      &to 2                                                              &mo 2      &kp Y           &macrotapu 0 U  &mt KP_NUMBER_1 I  &macrotapo 0 O  &kp P               &kp BSLH
 &kp TAB         &macrotapa 0 A  &hm LCTRL S  &hm LALT D      &hm LSHFT F  &kp G      &mo 4      &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL   &mo 4      &kp H           &hm RSHIFT J    &hm RALT K         &hm RCTRL L     &hm LGUI SEMICOLON  &kp SQT
 &macrotaps 0 Z  &kp LSHFT       &kp X        &kp C           &kp V        &kp B                                &kp HOME      &kp PG_UP                             &macrotopn 0 N  &kp M           &kp COMMA          &kp DOT         &kp RSHFT           &kp SLASH

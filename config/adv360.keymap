@@ -394,6 +394,20 @@
             bindings = <&kp I &kp O>;
             label = "M_IO";
         };
+
+        frost_email: frost_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I &kp R &kp K &kp DOT &kp R &kp O &kp Y &kp B &kp A &kp L &kp AT &kp F &kp R &kp O &kp S &kp T &kp B &kp A &kp N &kp K &kp DOT &kp C &kp O &kp M>;
+            label = "FROST_EMAIL";
+        };
+
+        hfs1: hfs1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp A &kp N &kp G &kp LS(F) &kp I &kp R &kp E &kp LS(S) &kp Q &kp U &kp I &kp B &kp N1 &kp AT &kp RET>;
+            label = "HFS1";
+        };
     };
 
     combos {
@@ -450,11 +464,11 @@
 
         utf8 {
             bindings = <
-&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans     &trans     &trans        &trans      &md_h4
-&md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &trans       &uumlautl  &md_info   &oumlautl     &md_tip     &md_h2
-&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &trans     &sign      &md_danger    &trans      &md_h1
-&md_score   &kp LSHIFT     &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img    &pregunta  &md_question  &kp RSHIFT  &md_h3
-&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &md_success  &trans  &trans      &trans  &trans  &md_note               &trans     &trans     &trans        &to 5       &md_toc
+&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans        &trans     &trans        &trans      &md_h4
+&md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &hfs1        &uumlautl     &md_info   &oumlautl     &md_tip     &md_h2
+&md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &frost_email  &sign      &md_danger    &trans      &md_h1
+&md_score   &kp LSHIFT     &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img       &pregunta  &md_question  &kp RSHIFT  &md_h3
+&md_strike  &kp LC(LS(C))  &kp LC(LS(V))  &dquotes   &md_score              &md_success  &trans  &trans      &trans  &trans  &md_note               &trans        &trans     &trans        &to 5       &md_toc
             >;
         };
 

@@ -414,7 +414,7 @@
         hfs1: hfs1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(H) &kp A &kp N &kp G &kp LS(F) &kp I &kp R &kp E &kp LS(S) &kp Q &kp U &kp I &kp B &kp N1 &kp AT &kp RET>;
+            bindings = <&kp LS(H) &kp A &kp N &kp G &kp LS(F) &kp I &kp R &kp E &kp LS(S) &kp Q &kp U &kp I &kp B &kp S &kp N1 &kp AT &kp RET>;
             label = "HFS1";
         };
     };

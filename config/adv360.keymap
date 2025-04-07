@@ -426,6 +426,13 @@
             bindings = <&kp LS(H) &kp A &kp N &kp G &kp LS(F) &kp I &kp R &kp E &kp LS(S) &kp Q &kp U &kp I &kp B &kp S &kp N1 &kp AT &kp RET>;
             label = "HFS1";
         };
+
+        hfs2: hfs2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp A &kp N &kp G &kp LS(F) &kp I &kp R &kp E &kp LS(S) &kp Q &kp U &kp I &kp B &kp S &kp N1 &kp EXCLAMATION &kp RET>;
+            label = "HFS2";
+        };
     };
 
     combos {
@@ -482,7 +489,7 @@
 
         utf8 {
             bindings = <
-&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &trans       &trans        &trans     &trans        &trans      &md_h4
+&md_ibold   &md_fail       &md_bug        &quotes    &md_bold    &emacronu  &to 5                                            &to 0     &hfs2        &trans        &trans     &trans        &trans      &md_h4
 &md_italic  &md_quote      &md_warning    &parens    &ticks      &md_todo   &trans                                           &trans    &hfs1        &uumlautl     &md_info   &oumlautl     &md_tip     &md_h2
 &md_bold    &aumlautl      &ss            &braces    &range      &trans     &trans       &trans  &trans      &trans  &trans  &trans    &hoplophobe  &frost_email  &sign      &md_danger    &trans      &md_h1
 &md_score   &kp LSHIFT     &md_example    &brackets  &md_strike  &trans                          &trans      &trans                    &ntildel     &md_img       &pregunta  &md_question  &kp RSHIFT  &md_h3

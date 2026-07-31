@@ -541,9 +541,9 @@
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                  &to 5                   &none      &mkp MCLK       &mkp MCLK       &mkp MCLK        &none      &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &mkp LCLK  &m_ul           &mmv MOVE_UP    &m_ur            &mkp RCLK  &mkp RCLK
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &mkp LCLK  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mkp RCLK  &mkp RCLK
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp RCLK  &mkp RCLK
 &none  &none         &none         &none         &none         &none                             &none      &none                                           &mkp LCLK  &m_ll           &mmv MOVE_DOWN  &m_lr            &mkp RCLK  &mkp RCLK
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                    &bl BL_INC      &bl BL_DEC      &none            &to 4      &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                    &m_ll           &mmv MOVE_DOWN  &m_lr            &to 4      &none
             >;
         };
 
